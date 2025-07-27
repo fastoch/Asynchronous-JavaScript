@@ -2,6 +2,8 @@ src = https://www.youtube.com/watch?v=PgZ9npYJZzU
 
 #  Promises
 
+The JavaScript Promises feature was officially introduced as part of ECMAScript 6 (ES6) in **2015**.  
+
 When we perform an asynchronous operation, like fetching data from a server, we don't get the result
 immediately. Instead, JavaScript gives us a Promise object right away.  
 
@@ -16,5 +18,8 @@ check the `index.js` file for an example
 
 # Async/Await
 
+The JavaScript async/await feature was released in **2017** as part of the ECMAScript 2017 edition.   
+
 check the `index2.js` file for an example
 
+@11/23

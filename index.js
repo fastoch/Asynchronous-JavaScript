@@ -2,13 +2,14 @@
 // like a network request using setTimeout
 const introducing = new Promise((resolve, reject) => {
   setTimeout(() => {
-    const name = "Bond"
+    const name = "James Bond"
+
     if (name === "Bond") {
       // it's good practice to resolve with a value
       resolve(`Success! The name is ${name}`)
     } else {
       // and to reject with an error or a reason
-      reject("Failure! The name is not Bond")
+      reject(`Failure! The name is not Bond, it's ${name}`)
     }
   }, 1000) // simulates a 1-second delay
 })
@@ -20,6 +21,9 @@ introducing
   })
   .catch((errorMessage) => {
     console.error(errorMessage)  // this will run if the promise is rejected
+  })
+  .finally(() => {
+    console.log("Promise settled!") // this will run in any case (resolved or rejected)
   })
 
 /* 
