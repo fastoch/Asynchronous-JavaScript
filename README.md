@@ -14,12 +14,16 @@ A Promise can be in one of 3 states:
 - **fulfilled** or **resolved**: the operation completed successfully, the promise now holds a value
 - **rejected**: the operation failed, the promise now holds an error (a reason for the failure)
 
-check the `index.js` file for an example
+check the `promise.js` file for an example
 
 # Async/Await
 
 The JavaScript async/await feature was released in **2017** as part of the ECMAScript 2017 edition.   
 
-check the `index2.js` file for an example
+The **async** keyword is used to declare a function as asynchronous.  
+This function always returns a **Promise**, even if it appears to return a simple value.  
 
-@11/23
+Inside an **async** function, the **await** keyword pauses the execution of the function until the promise after await settles (either resolves or rejects). The code "waits" at that point for the asynchronous operation to finish, then resumes with the resolved value as if synchronous code had been written.  
+
+check the `async-await.js` file for an example
+

@@ -23,13 +23,15 @@ introducing
     console.error(errorMessage)  // this will run if the promise is rejected
   })
   .finally(() => {
-    console.log("Promise settled!") // this will run in any case (resolved or rejected)
+    console.log("Promise settled!") // this will run in any case 
   })
 
 /* 
 The program knows what "successMessage" is because of the direct link between the resolve function inside 
 the Promise and the .then() method chained to it.
+
 "successMessage" is simply the name we chose for the parameter that receives the value from resolve. 
 We could have named it anything.
+
 The same applies to "errorMessage": there's a direct link between reject() and .catch()
 */
